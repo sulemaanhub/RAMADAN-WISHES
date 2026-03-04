@@ -1,34 +1,130 @@
 # RAMADAN-WISHES
 <!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>RAMADAN-WISHES</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="RAMADAN-WISHES" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://sulemaanhub.github.io/RAMADAN-WISHES/" />
+<meta property="og:url" content="https://sulemaanhub.github.io/RAMADAN-WISHES/" />
+<meta property="og:site_name" content="RAMADAN-WISHES" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="RAMADAN-WISHES" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"RAMADAN-WISHES","name":"RAMADAN-WISHES","url":"https://sulemaanhub.github.io/RAMADAN-WISHES/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/RAMADAN-WISHES/assets/css/style.css?v=08121a7a48b0fbd3edff124d856069fd829541c1">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/RAMADAN-WISHES/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+
+      <h1 id="ramadan-wishes">RAMADAN-WISHES</h1>
+<p>&lt;!DOCTYPE html&gt;</p>
 <html>
 <head>
 <title>Ramadan Mubarak</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #001f3f, #003366);
+    font-family: Arial;
+    color: white;
+    overflow: hidden;
+}
+
+.card {
+    margin-top: 100px;
+    padding: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+h1 {
+    font-size: 40px;
+    color: gold;
+}
+
+p {
+    font-size: 18px;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px gold; }
+    to { text-shadow: 0 0 25px yellow; }
+}
+
+.moon {
+    font-size: 80px;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: gold;
+    color: black;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+</style>
 </head>
 
-<body style="text-align:center; margin-top:100px; font-family:Arial;">
+<body>
 
-<h1>🌙 Ramadan Kareem 🌙</h1>
+<div class="card">
+    <div class="moon">🌙</div>
+    <h1>Ramadan Mubarak</h1>
+    <p>May Allah bless you with peace, happiness and prosperity.</p>
 
-<button onclick="playSound()" style="padding:15px; font-size:18px;">
-Play Audio 🔊
-</button>
+    <button class="btn" onclick="playMusic()">Play Dua 🤲</button>
+</div>
 
-<br><br>
-
-<audio id="myAudio" controls>
-  <source src="ayo.mp3" type="audio/mpeg">
-</audio>
+<audio id="bgmusic" src="C:\Users\Intel\Downloads\ramdan kareem auido.mpeg"></audio>
 
 <script>
-function playSound() {
-  var audio = document.getElementById("myAudio");
-  audio.play().catch(function(error){
-    alert("Audio blocked by browser. Please press play button below.");
-  });
+function playMusic() {
+    document.getElementById("bgmusic").play();
 }
 </script>
 
 </body>
 </html>
 
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
