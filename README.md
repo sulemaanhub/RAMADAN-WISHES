@@ -110,7 +110,7 @@ p {
     <button class="btn" onclick="playMusic()">Play Dua 🤲</button>
 </div>
 
-<audio id="bgmusic" src="C:\Users\Intel\Downloads\ramdan kareem auido.mpeg"></audio>
+<audio id="bgmusic" src="ramdan kareem auido.mpeg"></audio>
 
 <script>
 function playMusic() {
