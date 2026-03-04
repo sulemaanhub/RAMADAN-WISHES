@@ -4,79 +4,31 @@
 <head>
 <title>Ramadan Mubarak</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: linear-gradient(to bottom, #001f3f, #003366);
-    font-family: Arial;
-    color: white;
-    overflow: hidden;
-}
-
-.card {
-    margin-top: 100px;
-    padding: 20px;
-    animation: glow 2s infinite alternate;
-}
-
-h1 {
-    font-size: 40px;
-    color: gold;
-}
-
-p {
-    font-size: 18px;
-}
-
-@keyframes glow {
-    from { text-shadow: 0 0 10px gold; }
-    to { text-shadow: 0 0 25px yellow; }
-}
-
-.moon {
-    font-size: 80px;
-    animation: float 3s infinite ease-in-out;
-}
-
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
-}
-
-.btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: gold;
-    color: black;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-</style>
 </head>
 
-<body>
+<body style="text-align:center; margin-top:100px; font-family:Arial;">
 
-<div class="card">
-    <div class="moon">🌙</div>
-    <h1>Ramadan Mubarak</h1>
-    <p>May Allah bless you with peace, happiness and prosperity.</p>
+<h1>🌙 Ramadan Kareem 🌙</h1>
 
-    <button class="btn" onclick="playMusic()">Play Dua 🤲</button>
-</div>
+<button onclick="playSound()" style="padding:15px; font-size:18px;">
+Play Audio 🔊
+</button>
 
-<audio id="bgmusic" src="ramdan kareem auido.mpeg"></audio>
+<br><br>
+
+<audio id="myAudio" controls>
+  <source src="ayo.mp3" type="audio/mpeg">
+</audio>
 
 <script>
-function playMusic() {
-    document.getElementById("bgmusic").play();
+function playSound() {
+  var audio = document.getElementById("myAudio");
+  audio.play().catch(function(error){
+    alert("Audio blocked by browser. Please press play button below.");
+  });
 }
 </script>
 
 </body>
 </html>
+
